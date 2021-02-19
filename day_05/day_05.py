@@ -1,12 +1,12 @@
-vowels = 'aeiou'
-bad_strings = ['ab', 'cd', 'pq', 'xy']
+VOWELS = 'aeiou'
+BAD_STRINGS = ['ab', 'cd', 'pq', 'xy']
 
 
 def is_nice_string(row):
     if (
-            sum(row.count(v) for v in vowels) >= 3 and
+            sum(row.count(v) for v in VOWELS) >= 3 and
             any(row[i] == row[i + 1] for i in range(len(row) - 1)) and
-            not any(b in row for b in bad_strings)
+            not any(b in row for b in BAD_STRINGS)
     ):
         return True
     return False
