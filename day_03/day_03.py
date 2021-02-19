@@ -1,4 +1,4 @@
-moves = {
+MOVES = {
     '^': 0 + 1j,
     'v': 0 - 1j,
     '<': -1 + 0j,
@@ -10,7 +10,7 @@ def deliver_house(directions):
     pos = 0 + 0j
     all_pos = [pos]
     for d in directions:
-        pos += moves[d]
+        pos += MOVES[d]
         all_pos.append(pos)
     return all_pos
 
