@@ -41,4 +41,4 @@ for a in range(101):
                 max_score_500_calories = score
 
 print(f"Answer part one: {max_score}")
-print(f"Answer part one: {max_score_500_calories}")
+print(f"Answer part two: {max_score_500_calories}")
