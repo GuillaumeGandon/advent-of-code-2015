@@ -16,7 +16,7 @@ def solve(nb_group):
             if sum(comb) == targeted_weight
         )
 
-    return min(prod(valid_comb) for valid_comb in valid_combinations)
+    return min(map(prod, valid_combinations))
 
 
 print(f"Answer part one: {solve(nb_group=3)}")
